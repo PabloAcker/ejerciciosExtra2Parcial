@@ -4,9 +4,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import web.webTest.TestBaseTodoLy;
 
+import java.util.Random;
+
 public class Ejercicio3 extends TestBaseTodoLy {
+    private Random rand = new Random();
     String nameProject = "NuevoProyecto_Acker";
-    String email = "pabloParcial2@pablo.com";
+    String email = "pabloParcial2"+rand.nextInt(1000)+"@pablo.com";
     String psw = "pablo123";
 
     @Test

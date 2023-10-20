@@ -14,12 +14,12 @@ public class Ejercicio4 extends TestBaseTodoist {
         loginPage.loginButton.click();
         navBarSection.addTask.click();
         Thread.sleep(2000);
-        navBarSection.taskName.setText("Task_Acker1");
+        navBarSection.taskName.setText("Task_Acker3");
         Thread.sleep(2000);
         navBarSection.buttonOk.click();
         Thread.sleep(1000);
         navBarSection.buttonCancel.click();
 
-        Assertions.assertTrue(navBarSection.taskExists("Task_Acker1"), "ERROR! No se pudo crear la task");
+        Assertions.assertTrue(navBarSection.taskExists("Task_Acker3"), "ERROR! No se pudo crear la task");
     }
 }

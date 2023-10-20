@@ -2,11 +2,11 @@ package web.webTest.filaB;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import web.webTest.TestBaseTodoLy;
+import web.webTest.TestBaseTodoist;
 
 import java.util.Random;
 
-public class Ejercicio3 extends TestBaseTodoLy {
+public class Ejercicio3 extends TestBaseTodoist {
     private Random rand = new Random();
     String email = "pablo"+rand.nextInt(10000)+"@pablo.com";
     String psw = "P4bl012345";
