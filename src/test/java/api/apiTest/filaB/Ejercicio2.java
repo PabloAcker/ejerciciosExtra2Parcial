@@ -30,7 +30,7 @@ public class Ejercicio2 {
 
         for(int i=0;i<4;i++){
             body.clear();
-            body.put("Content", "Item_Acker"+Integer.toString(i));
+            body.put("Content", "Item_Acker"+i);
             requestInfo.setHost(Configuration.host+"api/items.json").setBody(body.toString()).setHeader("Authorization", "Basic " + auth);
             response = FactoryRequest.make("post").send(requestInfo);
             response.then()
